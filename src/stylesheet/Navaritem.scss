@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Racing+Sans+One:400|Roboto:400,500");
+.button-default {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(54, 123, 245, 0.24), 0px 4px 8px rgba(54, 123, 245, 0.16);
+  display: flex;
+  height: 40px;
+  justify-content: flex-end;
+  margin-left: 526px;
+  min-width: 96px;
+  padding: 0 7px;
+}
+.caption {
+  height: 24px;
+  letter-spacing: 0.75px;
+  min-height: 24px;
+  text-align: center;
+  width: 80px;
+}
+.fernando-pidrilio {
+  height: 40px;
+  margin-left: 16px;
+  object-fit: cover;
+  width: 40px;
+}
+.letter {
+  height: 32px;
+  letter-spacing: 0.15px;
+  line-height: 28px;
+  min-height: 32px;
+  text-align: center;
+  text-shadow: 0px 6px 12px rgba(54, 123, 245, 0.16), 0px 16px 24px rgba(54, 123, 245, 0.16);
+  white-space: nowrap;
+  width: 34px;
+}
+.logo-dashboard {
+  align-items: flex-start;
+  display: flex;
+  min-width: 205px;
+}
+.name {
+  height: 40px;
+  letter-spacing: 0.15px;
+  line-height: 28px;
+  margin-left: 10px;
+  min-height: 40px;
+  width: 154px;
+}
+.overlap-group {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 1px 2px rgba(7, 35, 47, 0.24), 0px 2px 6px rgba(7, 35, 47, 0.16);
+  display: flex;
+  height: 40px;
+  justify-content: flex-end;
+  min-width: 40px;
+  padding: 0 2px;
+}
+.racingsansone-normal-blue-24px {
+  color: var(--blue);
+  font-family: "Racing Sans One", Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.racingsansone-normal-storm-dust-24px {
+  color: var(--storm-dust);
+  font-family: "Racing Sans One", Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.roboto-medium-blue-14px {
+  color: var(--blue);
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.x-appbar {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  height: 64px;
+  padding: 0 16px;
+  width: 915px;
+}
+:root {
+  --blue: rgba(53, 122, 245, 1);
+  --storm-dust: rgba(93, 99, 102, 1);
+}
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

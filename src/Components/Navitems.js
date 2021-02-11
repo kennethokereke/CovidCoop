@@ -1,26 +1,31 @@
 import React from 'react'
-import ModeCommentIcon from '@material-ui/icons/ModeComment';
-import { Avatar } from '@material-ui/core'
+import ModeCommentIcon from '@material-ui/icons/ModeCommentRounded';
+import Avatar from '@material-ui/core/Avatar'
+import '../stylesheet/Navaritem.scss'
 
-function Navitems() {
 
-    const {letter, title, Icon, Avatar} = props
+
+
+
+function Navitems(props) {
+    const { letter, name, caption, fernandoPidrilio } = props;
+  
     return (
-        <div className="App_Navbar">
-      <div className="logo-dashboard">
-        <div className="logo">
-          <h1 className="letter valign-text-middle racingsansone-normal-blue-24px">{letter}</h1>
+      <div className="x-appbar">
+        <div className="logo-dashboard">
+          <div className="overlap-group">
+            <h1 className="letter valign-text-middle racingsansone-normal-blue-24px">{letter}</h1>
+          </div>
+          <div className="name valign-text-middle racingsansone-normal-storm-dust-24px">{name}</div>
         </div>
-        <div className="name valign-text-middle racingsansone-normal-storm-dust-24px">{title}</div>
+        <div className="button-default">
+          <div className="caption valign-text-middle roboto-medium-blue-14px">{caption}</div>
+        </div>
+        <img className="fernando-pidrilio" src={fernandoPidrilio} />
       </div>
-      <div className="button-default">
-        <div className="caption valign-text-middle roboto-medium-blue-14px">
-            <ModeComment/>
-            </div>
-      </div>
-      <Avatar src={Avatar} className="fernando-pidrilio" />
-    </div>
-    )
-}
+    );
+  }
 
-export default Navitems
+export default Navitems;
+
+
