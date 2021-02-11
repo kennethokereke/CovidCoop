@@ -4,11 +4,11 @@ import NavbarItem from '../Components/Navitems'
 function Navbar() {
   return (
       <NavbarItem
-   
-      letter="D"
-      name="COVID COOP"
-      caption="MESSAGE"
-      fernandoPidrilio="fernando-pidrilio@2x.jpg"
+      letter = "D"
+      title = "COVID COOP"
+      color = "blue"
+      size = "24px"
+      
     
       />
   )
