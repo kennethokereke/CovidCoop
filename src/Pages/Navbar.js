@@ -6,10 +6,7 @@ function Navbar() {
       <NavbarItem
       letter = "D"
       title = "COVID COOP"
-      color = "blue"
-      size = "24px"
       
-    
       />
   )
 }

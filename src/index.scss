@@ -1,6 +1,15 @@
 @import './stylesheet/Font.scss';
 @import './stylesheet/variable.scss';
 
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f3f2ee;
+  
+}
+
 h1 {
   font-family: $headerFontFamily ;
   font-size: 30.05px;
