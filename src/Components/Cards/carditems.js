@@ -13,10 +13,6 @@ import Countup from 'react-countup'
      }
 
     
-    
-
-    
-
    
     return (
         //We will find the number of people recovered death and confirmed
