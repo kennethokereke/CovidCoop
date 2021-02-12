@@ -1,7 +1,9 @@
 import React from 'react'
-import '../../stylesheet/Cards/cards.scss'
+import  '../../stylesheet/Cards/cards.scss'
 import {Card, CardContent, Typography, Grid } from '@material-ui/core'
 import Countup from 'react-countup'
+
+
 
 
  function carditems({data: {confirmed, recovered, deaths, lastUpdate}})  {
@@ -21,7 +23,7 @@ import Countup from 'react-countup'
          
         <div className="container">
             <Grid container spacing={3} justify="center">
-                    <Grid item component={Card}>
+                    <Grid item component={Card} xs={12} md={3} className="card infected">
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Infected</Typography>
                         <Typography variant="h5">
@@ -33,7 +35,7 @@ import Countup from 'react-countup'
 
                     </CardContent>
                     </Grid>
-                    <Grid item component={Card}>
+                    <Grid item component={Card} xs={12} md={3} className="card recovered">
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Recovered</Typography>
                         <Typography variant="h5">
@@ -45,7 +47,7 @@ import Countup from 'react-countup'
 
                     </CardContent>
                     </Grid>
-                    <Grid item component={Card}>
+                    <Grid item component={Card} xs={12} md={3} className="card deaths">
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Deaths</Typography>
                         <Typography variant="h5">
