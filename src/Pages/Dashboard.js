@@ -7,6 +7,7 @@ import {fetchData} from '../api/api.js'
 import  '../stylesheet/Dashboard.scss'
 
 function Dashboard() {
+  
   const [data, setData] = useState({
     data: {}
   })
@@ -30,8 +31,9 @@ function Dashboard() {
 
     return (
      
+     
       <div className="container">
-      <Card data={data}/>
+      <Card data={data.data}/>
       <CountryPicker/>
       <Chart/>
 
