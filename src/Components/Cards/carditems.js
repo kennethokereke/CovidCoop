@@ -7,7 +7,7 @@ import Countup from 'react-countup'
 
 
  function carditems({data: {confirmed, recovered, deaths, lastUpdate}})  {
-    console.log(confirmed)
+    
      if(!confirmed) {
         return 'loading....'
      }

@@ -4,7 +4,7 @@ import {fetchDailyData} from '../../api/api.js'
 import { Line, Bar,} from 'react-chartjs-2'
 
 
-const  Chart = () => {
+const  Chart = ({ data: {confirmed, recovered, deaths}, country}) => {
 
     const [dailyData, setDailyData] = useState([])
 
@@ -12,10 +12,10 @@ const  Chart = () => {
         const fetchAPI = async () => {
             setDailyData(await fetchDailyData());
         }
-        console.log(dailyData)
+      
         fetchAPI()
 
-    },[])
+    }, [])
 
     const lineChart = (
         dailyData ? (
@@ -38,6 +38,32 @@ const  Chart = () => {
             }],
         }}
         />) : null
+    );
+
+
+    const barChart = (
+       confirmed
+        ? ( <Bar
+            data={{
+                labels: ['Infected', 'Recovered', 'Deaths'],
+                datasets: [{
+                    label: 'people',
+                    backgroundColor: [
+                        'rgba(0,0,255,0.5)',
+                        'rgba(0,255,0,0.5)',
+                        'rgba(255,0,0,0.5)',
+
+                    ],
+                    data:[confirmed.value, recovered.value, deaths.value]
+                }]
+
+            }}
+            options={{
+                legend: {display: 'false'},
+                title: {display: 'true', text: `Current state in ${country}`},
+            }}
+            />
+        ) : null
     )
 
     
@@ -46,7 +72,7 @@ const  Chart = () => {
 
     return (
         <div className="container_chart">
-           {lineChart}
+           {country ? barChart : lineChart}
         </div>
     )
 }
